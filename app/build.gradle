@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.practise"
-        minSdkVersion 16
-        targetSdkVersion 31
+        minSdkVersion 24
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 

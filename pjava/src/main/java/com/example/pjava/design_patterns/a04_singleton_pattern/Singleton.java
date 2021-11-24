@@ -4,52 +4,54 @@ package com.example.pjava.design_patterns.a04_singleton_pattern;
  * @ProjectName: Practise
  * @Package: com.example.pjava.design_patterns.a04_singleton_pattern
  * @ClassName: Singleton
- * @Description: java类作用描述
+ * @Description: 单例
  * @Author: 毛毛虫
- * @CreateDate: 2021/10/19 6:18 下午
+ * @CreateDate: 2021/10/20 10:47 上午
  * @UpdateUser: 更新者
- * @UpdateDate: 2021/10/19 6:18 下午
+ * @UpdateDate: 2021/10/20 10:47 上午
  * @UpdateRemark: 更新说明
  * @Version: 1.0
  */
 public class Singleton {
-    private static Singleton instance = null;
 
-    private Singleton() {
+    /**
+     * 私有化构造函数
+     */
+    private Singleton(){}
+
+    /**
+     * 饿汉式
+     * 在创建的时候就初始化
+     * 缺点：当实例的创建依赖参数时 将无法实现
+     */
+    private static final Singleton instance=new Singleton();
+    public static Singleton getInstance(){
+        return instance;
+    }
+
+
+    /**
+     * 静态内部类  （推荐）
+     */
+    private static class SingletonHolder{
+        private static final Singleton INSTANCE=new Singleton();
+    }
+    private static Singleton getInstance2(){
+        return SingletonHolder.INSTANCE;
     }
 
     /**
-     * 懒汉式 线程不安全
-     * @return
+     * 枚举法
      */
-    static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
+    private enum SingltonEnum{
+        INSTANCE;
+        private Singleton singleton;
+        private SingltonEnum(){
+            singleton=new Singleton();
         }
-        return instance;
+    }
+    private static Singleton getInstance3(){
+        return SingltonEnum.INSTANCE.singleton;
     }
 
-    /**
-     * 懒汉式 线程安全 但是不高效 同一时间只能有一个线程调用getInstance2()方法
-     * @return
-     */
-    static synchronized Singleton getInstance2(){
-        if (instance == null) {
-            instance = new Singleton();
-        }
-        return instance;
-    }
-
-    /**
-     * 双重检验锁 线程安全 但仍有问题
-     * @return
-     */
-    static Singleton getInstance3() {
-        if (instance == null)
-            synchronized (Singleton.class) {
-                if (instance == null)
-                    instance = new Singleton();
-            }
-        return instance;
-    }
 }

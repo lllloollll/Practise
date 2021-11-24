@@ -1,3 +1,4 @@
 rootProject.name = "Practise"
 include ':app'
 include ':pjava'
+include ':pcompose'
