@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.TestNotificationActivity">
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel_notification"
+        android:onClick="onClick" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="大图片（无缩略图）通知"
+    android:onClick="onClick"
+    android:id="@+id/bt_big_picturue_1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大图片（缩略图）通知"
+        android:onClick="onClick"
+        android:id="@+id/bt_big_picturue_2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下拉文字通知"
+        android:onClick="onClick"
+        android:id="@+id/bt_big_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收件箱📥样式"
+        android:onClick="onClick"
+        android:id="@+id/bt_inbox"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话样式"
+        android:onClick="onClick"
+        android:id="@+id/bt_messsage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高优先级通知"
+        android:onClick="onClick"
+        android:id="@+id/bt_high"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动常规活动"
+        android:onClick="onClick"
+        android:id="@+id/bt_start_normal_activity"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知组消息"
+        android:onClick="onClick"
+        android:id="@+id/bt_group"/>
+
+</LinearLayout>

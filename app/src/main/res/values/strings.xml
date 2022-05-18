@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Practise</string>
+
+    <string name="today">Today</string>
+    <string name="last7day">Last 7 day</string>
+    <string name="alltime">All time</string>
 </resources>

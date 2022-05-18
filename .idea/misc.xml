@@ -14,6 +14,20 @@
         <entry key="../../../../layout/compose-model-1637717990077.xml" value="0.67" />
         <entry key="../../../../layout/compose-model-1637722326838.xml" value="0.25" />
         <entry key="../../../../layout/compose-model-1637740932041.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/drawable/check_box_item_hashtag.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_base.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_test_notification.xml" value="0.40350877192982454" />
+        <entry key="app/src/main/res/layout/activity_test_rv_in_vp2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rv_item.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/rv_item_hashtag.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/vp2_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/vp2_item_iv.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/vp2_item_rv.xml" value="0.1" />
+        <entry key="test_nsfw/src/main/res/layout/activity_main.xml" value="0.15092592592592594" />
+        <entry key="test_nsfw/src/main/res/layout/rv_item.xml" value="0.18" />
       </map>
     </option>
   </component>

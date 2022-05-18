@@ -1,0 +1,1 @@
+#### rvinvp2 用于测试viewpager2内item recyclerview滑动冲突

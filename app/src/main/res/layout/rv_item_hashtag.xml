@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/item_tv_number"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/color_A6A6A6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/item_tv_hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/color_4D4D4D"
+        android:textSize="16sp"
+        tools:text="#love" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/item_tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/color_919191"
+        android:textSize="12sp"
+        tools:text="2 m" />
+
+    <FrameLayout
+        android:id="@+id/item_toggle_bg"
+        android:layout_width="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="32dp">
+
+        <ToggleButton
+            android:id="@+id/item_toggle_bt"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center|end"
+            android:background="@drawable/check_box_item_hashtag"
+            android:textOff="@null"
+            android:textOn="@null" />
+    </FrameLayout>
+</LinearLayout>
