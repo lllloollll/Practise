@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlg_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_radius_12"
+    android:backgroundTint="@color/white"
+    android:padding="48dp">
+
+    <TextView
+        android:id="@+id/dlg_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black_80"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Maomao" />
+
+    <TextView
+        android:id="@+id/dlg_tv_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/black_60"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/dlg_tv_name"
+        tools:text="10088888" />
+
+    <Button
+        android:id="@+id/dlg_btn_send_msg"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_radius_12"
+        android:backgroundTint="@color/black_20"
+        android:text="Send Message"
+        android:textAllCaps="false"
+        android:textColor="@color/black_60"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/dlg_btn_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dlg_tv_phone_number" />
+
+    <Button
+        android:id="@+id/dlg_btn_call"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_radius_12"
+        android:backgroundTint="@color/black_20"
+        android:text="Call"
+        android:textAllCaps="false"
+        android:textColor="@color/black_60"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dlg_btn_send_msg"
+        app:layout_constraintTop_toTopOf="@id/dlg_btn_send_msg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

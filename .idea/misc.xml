@@ -14,6 +14,11 @@
         <entry key="../../../../layout/compose-model-1637717990077.xml" value="0.67" />
         <entry key="../../../../layout/compose-model-1637722326838.xml" value="0.25" />
         <entry key="../../../../layout/compose-model-1637740932041.xml" value="0.1" />
+        <entry key="address_book/src/main/res/drawable/shape_radius_12.xml" value="0.1505" />
+        <entry key="address_book/src/main/res/layout/activity_adress.xml" value="0.30434782608695654" />
+        <entry key="address_book/src/main/res/layout/activity_main.xml" value="0.16945288753799392" />
+        <entry key="address_book/src/main/res/layout/dlg_adress.xml" value="0.25" />
+        <entry key="address_book/src/main/res/layout/rv_item_adress_book.xml" value="0.33" />
         <entry key="app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1388888888888889" />
         <entry key="app/src/main/res/drawable/check_box_item_hashtag.xml" value="0.1" />
