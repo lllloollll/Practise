@@ -32,6 +32,7 @@
         <entry key="app/src/main/res/layout/vp2_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/vp2_item_iv.xml" value="0.1" />
         <entry key="app/src/main/res/layout/vp2_item_rv.xml" value="0.1" />
+        <entry key="test_intent/src/main/res/layout/activity_main.xml" value="0.16945288753799392" />
         <entry key="test_nsfw/src/main/res/layout/activity_main.xml" value="0.15092592592592594" />
         <entry key="test_nsfw/src/main/res/layout/rv_item.xml" value="0.18" />
       </map>
