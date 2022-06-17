@@ -114,4 +114,6 @@ class MainActivity : AppCompatActivity() {
     fun String.log() = this.apply {
         Log.d(TAG, this)
     }
+
 }
+
