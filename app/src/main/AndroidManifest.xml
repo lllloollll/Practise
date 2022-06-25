@@ -16,17 +16,10 @@
         tools:replace="android:appComponentFactory">
         <activity
             android:name=".testjs.TestJsActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ui.slide.rvinvp2.TestRvInVp2Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <receiver
             android:name=".notification.TestNotificationReceiver"
@@ -39,7 +32,13 @@
         <activity
             android:name=".notification.TestNotificationActivity"
             android:exported="false" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

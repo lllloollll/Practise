@@ -3,7 +3,7 @@ package com.example.practise.notification
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.example.practise.utils.LogUtils
+import com.example.base.utils.LogUtils
 
 class TestNotificationReceiver : BroadcastReceiver() {
     companion object {

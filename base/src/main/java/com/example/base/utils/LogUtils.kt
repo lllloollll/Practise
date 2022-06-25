@@ -1,11 +1,11 @@
-package com.example.practise.utils
+package com.example.base.utils
 
 import android.util.Log
-import com.example.practise.BuildConfig
+import com.example.base.BuildConfig
 
 /**
  *  @ProjectName:   Practise
- *      @Package:   com.example.practise.utils
+ *      @Package:   com.example.base.utils
  *    @ClassName:   LogUtils
  *  @Description:   java类作用描述
  *       @Author:   毛毛虫

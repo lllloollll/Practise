@@ -5,25 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <Button
+        android:id="@+id/bt_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/bt_notification"
+        android:onClick="onClick"
         android:text="To Notification"
         android:textAllCaps="false"
-        android:onClick="onClick"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_test"
-        android:text="how old are you"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="how old are you"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="value" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format="%s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_notification" />
+
+    <Switch
+        android:id="@+id/switch_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="off"
+        android:textOn="on"
+        android:thumbTint="@color/teal_200"
+        android:trackTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chronometer" />
+
+    <TextClock
+        android:id="@+id/text_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format24Hour="hh:MM:ss"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

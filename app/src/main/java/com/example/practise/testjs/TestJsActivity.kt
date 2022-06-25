@@ -1,17 +1,14 @@
 package com.example.practise.testjs
 
 import android.graphics.Bitmap
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.webkit.*
 import android.widget.TextView
 import com.example.practise.R
 import com.example.practise.base.BaseActivity
-import com.example.practise.utils.LogUtils
-import com.example.practise.utils.VUiKit
-import java.io.ByteArrayOutputStream
-import java.net.CookieStore
+import com.example.base.utils.LogUtils
+import com.example.base.utils.VUiKit
 
 class TestJsActivity : BaseActivity() {
     private val webView: WebView

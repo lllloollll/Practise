@@ -25,10 +25,10 @@ object testFlow {
         }
     }
 
-    suspend fun simple(): List<Int> {
-        delay(1000)
-        return listOf(1, 2, 3)
-    }
+//    suspend fun simple(): List<Int> {
+//        delay(1000)
+//        return listOf(1, 2, 3)
+//    }
 
     //返回一个流，不需要挂起
     fun simple3(): Flow<Int> = flow {   //流构建器
@@ -51,10 +51,16 @@ object testFlow {
         }
     }
 
-    fun requestFlow(i:Int):Flow<String> = flow {
+    fun requestFlow(i: Int): Flow<String> = flow {
         emit("$i : First")
         delay(500)
         emit("$i : Second")
+    }
+
+    fun simple():Flow<Int> = flow {
+        for (i in 0..5){
+            emit(i)
+        }
     }
 
 }
@@ -191,12 +197,63 @@ fun main() = runBlocking<Unit> {
 //        .collect { println("$it at ${System.currentTimeMillis()-startTime}ms from combine start") }
 
     //展平流
-    (1..3).asFlow().map { testFlow.requestFlow(it) }
-        .collect { println(it) }
-    (1..3).asFlow().flatMapConcat { testFlow.requestFlow(it) }
-        .collect { println(it) }
-    (1..3).asFlow().flatMapMerge { testFlow.requestFlow(it) }
-        .collect { println(it) }
+//    (1..3).asFlow().map { testFlow.requestFlow(it) }
+//        .collect { println("map:$it") }
+//    (1..3).asFlow().flatMapConcat { testFlow.requestFlow(it) }
+//        .collect { println("flatMapConcat:$it") }
+//    (1..3).asFlow().flatMapMerge { testFlow.requestFlow(it) }
+//        .collect { println("flatMapMerge:$it") }
+//    (1..3).asFlow().flatMapLatest { testFlow.requestFlow(it) }
+//        .collect { println("flatMapLatest:$it") }
+
+    //流异常
+//    try {
+//        (1..5).asFlow().collect { value ->
+//            println(value)
+//            check(value < 3) {  //当value>=3抛出异常
+//                "Collected $value"
+//            }
+//        }
+//    } catch (e: Throwable) {
+//        println("Caught $e")
+//    }
+
+//    (1..5).asFlow()
+//        .onEach { value ->
+//            check(value < 3) {  //当value>=3抛出异常
+//                "Collected $value"
+//            }
+//            println(value)
+//        }
+//        .catch { cause -> cause?.let { println(it) } } //对异常进行处理
+//        .collect()
+
+    //流完成
+//    try {
+//        (1..3).asFlow()
+//            .collect { println(it) }
+//    }finally {
+//        println("Done")
+//    }
+
+//    (1..5).asFlow()
+//        .onCompletion { cause -> cause?.let { println("error:$it") } ?: let { println("Done") } }
+//        .collect {
+//            check(it < 3) { "Collect value" }
+//            println(it)
+//        }
+
+    //流的取消
+//    testFlow.simple().collect {
+//        if (it==3) cancel()
+//        println(it)
+//    }
+    flowOf(1,3,4,5,5)
+        .cancellable()
+        .collect {
+            if (it==3) cancel()
+            println(it) }
+
 }
 
 fun String.println() = this.apply {

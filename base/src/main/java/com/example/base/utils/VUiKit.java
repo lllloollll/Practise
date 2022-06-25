@@ -1,4 +1,4 @@
-package com.example.practise.utils;
+package com.example.base.utils;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,6 +10,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import org.jdeferred.android.AndroidDeferredManager;
+
 
 /**
  * @author Long

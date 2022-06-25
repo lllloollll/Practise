@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.practise.R
-import com.example.practise.utils.VUiKit
+import com.example.base.utils.VUiKit
 import com.google.android.material.tabs.TabLayout
 import java.util.*
 

@@ -13,14 +13,15 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/address_book" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/pcompose" />
             <option value="$PROJECT_DIR$/pjava" />
+            <option value="$PROJECT_DIR$/screen_save" />
             <option value="$PROJECT_DIR$/test_intent" />
             <option value="$PROJECT_DIR$/test_nsfw" />
             <option value="$PROJECT_DIR$/x_billing4" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
